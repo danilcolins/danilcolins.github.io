@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design of everything | Home</title>
+	<meta charset="UTF-8">
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<meta name="description" content="Design of everything | Home">
+	<meta name="keywords" content="danil, colins, design of everything ,даниил, варежкин, яндекс, гугл, разработка, андроид, скачать, магазин, саракташ, коронавирус, юнити, photo, design, фото, дизайн, веб, графика">
+	<meta name="Author" content="Даниил Варежкин (Danil Colins)">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!--Start Header-->
+	<div class="clearfix"></div>
+	<div class="navbar">
+	<header class="header">
+		<nav class="dws-menu">
+			<ul>
+				<li><a href="#" class="nav-link">Home</a>
+					<ul>
+						<li><a href="#about" class="nav-link">About</a></li>
+						<li><a href="#mywork" class="nav-link">How we work</a></li>
+						<li><a href="Error/error.html" class="nav-link">To order</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="nav-link">Development</a>
+					<ul>
+						<li><a href="AppStore/appstore.html" class="nav-link">App Store</a></li>
+						<li><a href="Web-Sites/websites.html" class="nav-link">Web-Sites</a></li>
+					</ul>
+				</li>
+				<li><a href="Design/design.html" class="nav-link">Design</a></li>
+				<li><a href="Photo/photo.html" class="nav-link">Photo</a></li>
+				<li><a href="#" class="nav-link">Services</a>
+					<ul>
+						<li><a href="Web-Sites/websites.html" class="nav-link">Web Sites</a></li>
+						<li><a href="Design/design.html" class="nav-link">Design Services</a></li>
+						<li><a href="Photo/photo.html" class="nav-link">Photo Services</a></li>
+					</ul>
+				</li>
+				<li><a href="#" class="nav-link">Other</a>
+					<ul>
+						<li><a href="Gpanoramas/panoramas.html" class="nav-link">Google Panoramas</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.nav-link").click(function(){
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top + "px"
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+				return false;
+			});
+		});
+	</script>	
+	<!--End Header-->
+	<div class="clearfix"></div>
+	<!--Start Banner-->
+	<div class="banner" id="banner">
+		<div class="bannerText">
+			<a href="index.html"><img src="images/logo2.png" alt=""/></a>
+			<h2>Danil_ Colins</h2>
+			<h1 id="maintext" class="maintext"></h1>
+			<h1>Welcome</h1>
+			<div class="header-top-bottom">
+				<a href="#about" class="nav-link"><img src="images/arrowdown.png" alt=""/></a>
+			</div>
+		</div>
+	</div>
+	<script>
+    mainDate = new Date();
+    myHour = mainDate.getHours();
+	var banner = document.getElementById('banner')
+	var maintext = document.getElementById('maintext')
+    if (myHour >= 6 && myHour < 12) {
+    	banner.style.backgroundImage = "url('images/banner.jpg')";
+    	document.getElementsByClassName("maintext")[0].innerHTML = "Good morning";
+    } else if (myHour >= 12 && myHour < 17) {
+    	banner.style.backgroundImage = "url('images/banner2.jpg')";
+    	document.getElementsByClassName("maintext")[0].innerHTML = "Good afternoon";
+    } else if (myHour >= 17 && myHour < 24) {
+    	banner.style.backgroundImage = "url('images/banner3.jpg')";
+    	document.getElementsByClassName("maintext")[0].innerHTML = "Good evening";
+    } else if (myHour >= 0 && myHour < 6) {
+    	banner.style.backgroundImage = "url('images/banner4.jpg')";
+    	document.getElementsByClassName("maintext")[0].innerHTML = "Good night";
+    };
+    ;
+  	</script>
+	<!--End Banner-->
+	<div class="clearfix"></div>
+	
+	<!--Start About-->
+	<div class="gggg" id="about">
+	<div class="MainText"><h1 class="AboutOus">About Ous</h1>
+	<div class="about">
+	
+		<div class="AboutUp">
+			<div class="AboutGroup">
+				<h3>Who are we?</h3>
+				<p>-we are your designers</p>
+				<p>-we are your developers</p>
+				<p>-we are your photographers</p>
+				<p>-we are the ones who will make you unique on the internet</p>
+			</div>
+			<div class="AboutGroup">
+				<h3>What are we doing?</h3>
+				<p>-we create</p>
+				<p>-we write</p>
+				<p>-we edit</p>
+			</div>
+			<div class="AboutGroup">
+				<h3>We in social networks</h3>
+				<ul>
+					<li><a href="https://vk.com/danilcolins" target="_blank"><img src="images/vk.svg"><div class="AboutSocialBotton"></a></li>				
+					<li><a href="https://www.youtube.com/channel/UCStcspV-BRq6uEvFdFAueLw?view_as=subscriber" target="_blank"><img src="images/youtube.svg"><div class="AboutSocialBotton"></a></li>
+					<li><a href="https://www.instagram.com/danil_colins/" target="_blank"><img src="images/instagram.svg"><div class="AboutSocialBotton"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<!--End About-->
+	<div class="clearfix"></div>
+	<!--Start our work-->
+	<div id="mywork" class="workbackground">
+	<div class="site-section">
+		<div class="HowWeWork">
+		<h1 >How we work</h1>
+		<div class="WorkUp">
+		<div class="wrap">
+			<div class="informBlock">
+				<i class="fas fa-clipboard-list"></i>
+				<h5 class="mainText">Planning.</h5>
+				<div class="underlineBlock"></div>
+				<p class="secondText">Development of a convenient interaction system, convenient access to all layout functions.</p>
+			</div>	
+			<div class="informBlock">
+				<i class="fas fa-rocket"></i>
+				<h5 class="mainText">Product design</h5>
+				<div class="underlineBlock"></div>
+				<p class="secondText">We will create an eye-pleasing design and fill your layout with a bright design.</p>
+				</div>	
+			<div class="informBlock">
+				<i class="fas fa-chart-pie"></i>
+				<h5 class="mainText">Development.</h5>
+				<div class="underlineBlock"></div>
+				<p class="secondText">After creating a beautiful design, we will develop the code for your site or app.</p>
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+	</div>
+	<!--End our work-->
+	<!--To order
+	<div class="orderBackground" id="order">
+	<div class="MainText"><h1 class="AboutOus">To order</h1>
+	<div class="about">
+	
+		<div class="AboutUp">
+			<div class="AboutGroup">
+				<h3>Where can I place an order?</h3>
+				<p>-You can leave your order by writing to us by email, in VK or instagram</p>
+				<p>Write by mail</p>
+				<p>Write by VK</p>
+				<p>Write by instagram</p>
+			</div>
+			<div class="AboutGroup">
+				<h3>What you can order</h3>
+				<p>-Design the layout of the site/app</p>
+				<p>-Single-page / multi-page site</p>
+				<p>-Photo session</p>
+			</div>
+			<div class="AboutGroup">
+				<h3>Price</h3>
+				<p>-You can find out the price from the performer of the order</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	-->
+</body>
+</html>

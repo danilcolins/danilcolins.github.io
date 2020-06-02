@@ -1,0 +1,249 @@
+body {
+	text-align: center;
+	background: #333;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 0;
+	justify-content: center;
+	align-items: center;
+}
+div{
+    margin: 0;
+    padding: 0;
+}
+/*Start Header*/
+.clearfix {
+	clear: both;
+}
+.header {
+	background-color: #333;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+}
+.dws-menu {
+	margin: 0;
+	padding: 0;
+
+}
+.dws-menu ul,
+.dws-menu ol {
+	list-style: none;
+}
+.dws-menu > ul {
+	display: flex;
+	justify-content: center;
+
+}
+
+.dws-menu > ul li a {
+
+	font-weight: bold;
+	font-size: 18px;
+	display: block;
+	color: #fff;
+	padding: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.35s;
+}
+
+.dws-menu > ul li a img{
+	width: 40px;	
+}
+.dws-menu li a:hover {
+	color: orange;
+	transition: all 0.35s;
+	font-size: 20px;
+}
+.dws-menu li:hover > ul {
+	display: block;
+}
+.dws-menu li ul {
+	position: absolute;
+	min-width: 160px;
+	padding: 0;
+	margin: 0; 
+	display: none;
+
+}
+.dws-menu li > ul li a {
+	padding: 10px;
+	text-transform: none;
+	background: #222;
+	text-transform: uppercase;
+}
+/*----End Header-----*/
+/*----Start Banner-----*/
+.banner {
+	background:url(../images/background.jpg) no-repeat;
+	background-size:100% 100%;
+	min-height: 720px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-size: 20px;
+	
+}
+.bannerText a img {
+	margin-top: 4%;
+}
+
+.bannerText h2 {
+	font-size: 1.3em;
+	color: #fff;
+	letter-spacing: 2px;
+	font-weight: 700;
+	margin: 5% 0px 0px 0px;
+}
+.bannerText h1 {
+	font-size: 3.2em;
+	color: #fff;
+	font-weight: 300;
+	margin: 15px 0px 0px 0px;
+	letter-spacing: 4px;
+}
+/*----End Banner----*/
+/*----Start about----*/
+.gggg{
+	background:url(../images/backgroundabout.jpg) no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+	width: 100%;
+}
+.MainText {
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 20px;
+	justify-content: center;
+	
+}
+.about {
+	display: inline-flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	padding-bottom: 50px;
+
+}
+.AboutUp {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 70%;
+	background: #1F1F1F; 
+	padding: 50px;
+	color: #fff;
+	font-size: 20px;
+	transition: all 0.5s;
+
+}
+
+.AboutGroup {
+	display: block;
+	align-items: center;
+	justify-content: center;
+	background: #111;
+	width: 95%;
+	min-height: 300px;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+.AboutGroup p {
+	font-size: 20px;
+	text-transform: none;
+	font-weight: lighter;
+	margin: 25px;
+	padding: 0;
+	margin-left: 20px;
+	text-align: left;
+}
+
+.AboutGroup p:hover {
+	color: orange;
+	transition: all 0.5s;
+}
+
+/*---End about---*/
+/*----Start Apps----*/
+.head {
+	font-size: 30px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 40px;
+}
+.apps {
+	width: 100%;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.appbox {
+	display: block;
+	width: 90%;
+	background: #222;
+	text-align: left;
+	padding: 30px;
+	margin: 30px;
+}
+.headerapp {
+	display: inline-flex;
+}
+.headerapp img {
+	width: 20%;
+	margin: 20px;
+}
+.headerapp h1 {
+	margin: 20px;
+	font-size: 30px;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+.headerapp h2 {
+	margin: 20px;
+	font-size: 25px;
+	font-weight: 300;
+	margin-top: 0;
+}
+.description {
+	font-size: 18px;
+	font-weight: lighter;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.link {
+	padding: 15px 45px;
+	background: linear-gradient(to left, #FF6200, #FF9100, #FF6200);
+	-webkit-background-size: 200%;
+	background-size: 200%;
+	clip-path: polygon(7% 0, 100% 0, 100% 30%, 100% 70%, 93% 100%, 30% 100%, 0 100%, 0% 30%);
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 30px;
+	letter-spacing: 2px;
+	transition: .5s;
+}
+
+.link:hover {
+	background-position: right;
+}
+.vk-wid {
+	display: flex;
+	margin: 20px;
+	margin-bottom: 0;
+}
+.commentsbox {
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+	width: 100%;
+	
+
+}
